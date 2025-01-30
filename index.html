@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+</head>
+
+<body class="bg-purple-200">
+    <section class="bg-purple-200 py-6">
+        <div class="container m-auto px-6">
+            <div class="w-4/5 lg:w-5/6 m-auto bg-gray-100 py-8 px-6 rounded-lg">
+                <div class="text-left py-6">
+                    <h1 class="block text-2xl md:text-5xl text-blue-900 font-medium text-left">Restaurent Reservation
+                        Form
+                    </h1>
+                </div>
+                <form action="https://formspree.io/f/xrbekzgw" method="POST">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="first_name"
+                                class="text-base md:text-xl font-semibold text-blue-900 block">Name</label>
+                            <input type="text" id="first_name" name="first_name"
+                                class="w-full bg-gray-50 p-3 border border-gray-300 rounded-lg mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                placeholder="First Name">
+                        </div>
+                        <div>
+                            <label for="last_name" class="text-base md:text-2xl font-semibold text-blue-900 invisible">
+                                Last
+                                Name</label>
+                            <input type="text" id="last_name" name="last_name"
+                                class="w-full bg-gray-50 p-3 border border-gray-300 rounded-lg mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                placeholder="Last Name">
+                        </div>
+                        <div>
+                            <label for="email"
+                                class="text-base md:text-xl font-semibold text-blue-900 block">Email</label>
+                            <input id="email" type="email" name="email"
+                                class="w-full bg-gray-50 p-3 border border-gray-300 rounded-lg mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label for="phone_number"
+                                class="text-base md:text-xl font-semibold text-blue-900 block">Phone Number</label>
+                            <input type="tel" id="phone_number" name="phone_number"
+                                class="w-full bg-gray-50 p-3 border border-gray-300 rounded-lg mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+
+                        <div>
+                            <label for="date" class="text-base md:text-xl font-semibold text-blue-900 block">Reservation
+                                Date :</label>
+                            <input type="date" name="date" id="date"
+                                class="w-full bg-gray-50 p-3 border border-gray-300 rounded-lg mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+
+
+                        <div>
+                            <label for="time" class="text-base md:text-xl font-semibold text-blue-900 block">Reservation
+                                Time :</label>
+                            <input type="time" name="time" id="time"
+                                class="w-full bg-gray-50 p-3 border border-gray-300 rounded-lg mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+
+                        <div class="md:col-span-2">
+                            <label for="total_people" class="text-base md:text-xl font-semibold text-blue-900 block">How
+                                Many Person will
+                                be with you :</label>
+                            <input type="number" name="total_people" id="total_people"
+                                class="w-full bg-gray-50 p-3 border border-gray-300 rounded-lg mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500"></input>
+                        </div>
+
+                        <div class="md:col-span-2">
+                            <label for="note" class="text-base md:text-xl font-semibold text-blue-900 block">Note
+                                :</label>
+                            <textarea rows="4" name="note" id="note"
+                                class="w-full bg-gray-50 p-3 border border-gray-300 rounded-lg mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"></textarea>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <button type="submit"
+                            class="block  w-full bg-blue-400 text-gray-50 px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-all uppercase cursor-pointer">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Javascript -->
+    <script src="custom.js"></script>
+</body>
+
+</html>
